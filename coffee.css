@@ -57,14 +57,14 @@ table{
 }
 
 #middle{
-    width:68%;height:400px;margin: 0 auto;float: left;
+    width:68%;height:400px;margin: 0 auto;float: left;padding-top: 10px;
 }
 #middle .top{
     display: block;
     margin: 0 auto;
 }
 .KFyangping{
-    margin:0 auto;width:600px;height:10px;
+margin-top:10px;width:600px;height:10px;margin: 10px auto;
 }
 .price::before{
     content: '￥';
@@ -73,7 +73,7 @@ p{
     text-indent:2em;
 }
 .coffeezl{
-    width:200px;height:100px;margin: 15px 0; 
+    width:200px;height:100px;margin: 15px auto; 
 }
 .daxie::first-letter{
     font-size:32px;
