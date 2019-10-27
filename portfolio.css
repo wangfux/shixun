@@ -1,0 +1,111 @@
+#header{
+    background-color: #ff4d4f;color:white;
+    font-size:30px;
+    text-align:center;
+    width: 100%;
+    height:100px;
+    line-height:100px ;
+}
+.bird{
+    width: 50px;
+    height: 50px;
+    float: left;
+    margin:30px ;
+    background-color:#ff4d4f;
+}
+.aihao{
+    float: left;
+    font-size: 15px;
+    margin:auto 0;
+}
+ul{
+    list-style-type:none;
+    font-size: 15px;
+}
+.lan li
+{
+   float:right;
+   padding-right: 10px;
+}
+a:link,a:visited
+{
+	font-weight:bold;
+	color:whitesmoke;
+	text-align:center;
+	text-transform:uppercase;
+}
+a:hover,a:active
+{
+	background-color:blue;
+}
+
+.aim h2{
+    text-align: center;
+    margin: 20px 20px 10px 20px;
+}
+.aim .middle{
+     width: 60px;
+     height: 10px;
+     border-bottom: 5px solid rebeccapurple;
+     margin: 0 auto;
+}
+.aim ul {
+      width: 1200px;
+      height: 400px;
+      margin: 10px auto;
+      list-style: none;
+} 
+.aim ul li{ 
+    box-sizing: border-box;
+    float: left;
+    width: 24%;
+    height: 400px;
+    margin-right: 10px;;
+    border: 1px solid pink;
+    text-align: center;
+    
+}
+.aim ul li img{
+    width: 90%;
+    height: 320px;
+    padding: 15px;
+    cursor: pointer;
+}
+.aim .names{
+     margin: 0 auto;
+     height: 10px;
+     line-height: 5px;
+}
+.aim ul li:hover{
+    opacity: 0.8;
+    border-color: red;
+}
+
+.footer{
+    clear: both;
+    width: 100%;
+    height: 350px;
+    background-color: green;
+    line-height: 80px;
+}
+.footer .top{
+    color:whitesmoke;
+    margin:30px 60px;
+    padding:30px 0 0 120px;
+}
+.footer img{
+    width: 200px;
+    height: 200px;
+    float: right;
+    margin-top: -80px;
+    margin-right: 100px;
+}
+.bottom{
+    width: 1000px;
+    color: #fff;
+    text-align: center;
+    border-top:1px solid #63000e ;
+   
+    margin:0px auto;
+    margin-top: 170px;
+}
