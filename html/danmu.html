@@ -7,7 +7,7 @@
     <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
     <title>Document</title>
     <style>
-        .container{
+    .container{
     width: 1200px;
     height:500px;
     margin: 50px auto;
@@ -23,14 +23,17 @@
     text-align: center;
     }
     .bul{
-    padding: 10px 20px;
+    padding: 2px 20px;
     display: inline-block;
     border: 15px;
     color:blueviolet;
-    margin: 20px;
+    margin: 10px;
     cursor: pointer;
     border: 1px solid greenyellow;
     }
+    div{
+            white-space:nowrap;
+        }
     </style>
 </head>
 <body>
@@ -55,7 +58,7 @@
                 var g=Math.floor(Math.random()*255);
                 var b=Math.floor(Math.random()*255);
                 var color="rgb("+r+","+g+","+b+")";
-                var speed=Math.floor(Math.random()*30000)+3000;
+                var speed=Math.floor(Math.random()*50000)+3000;
                 span.css('position','absolute').css('top',height).css('right','0').css('font-size',fontSize).css('color',color);
                 span.attr('speed',speed);
                 span.html(input);
