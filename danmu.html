@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+    <title>Document</title>
+    <style>
+    .container{
+    width: 1200px;
+    height:500px;
+    margin: 50px auto;
+    background: aliceblue;
+    border: 1px solid goldenrod;
+    border-radius:5px ;
+    position: relative;
+    overflow: hidden;
+         }
+    .menu-bar{
+    margin: 0 auto;
+    width: 1200px;
+    text-align: center;
+    }
+    .bul{
+    padding: 2px 20px;
+    display: inline-block;
+    border: 15px;
+    color:blueviolet;
+    margin: 10px;
+    cursor: pointer;
+    border: 1px solid greenyellow;
+    }
+    div{
+            white-space:nowrap;
+        }
+    </style>
+</head>
+<body>
+    <div class="container"></div>
+        <div class="menu-bar">
+          <div><input type="text" placeholder="弹幕内容" id="bullet-text"/>
+        </div>
+        <div class="bul">
+          <button class="send">发送弹幕</button>
+          <button class="clear">清屏</button>
+        </div>
+    <script>
+        $(function(){
+          $('.send').click(function(){
+              var input=$('input').val();
+              var span=$("<span></span>");
+              var fontSize=Math.floor(Math.random()*40)+20;
+              fontSize=fontSize+'px';
+              var height=Math.floor(Math.random()*400);
+                  height=height+'px';
+                 var r=Math.floor(Math.random()*255);
+                var g=Math.floor(Math.random()*255);
+                var b=Math.floor(Math.random()*255);
+                var color="rgb("+r+","+g+","+b+")";
+                var speed=Math.floor(Math.random()*50000)+3000;
+                span.css('position','absolute').css('top',height).css('right','0').css('font-size',fontSize).css('color',color);
+                span.attr('speed',speed);
+                span.html(input);
+                $('.container').append(span);
+                $('.container').children().animate({
+                    right:"100%"},speed,
+                    function(){
+                        $(this).remove();
+                    }
+                    )
+         
+          
+      })
+      $('.clear').click(function () {
+        $('.container').empty();
+    })
+
+    $('input').keyup(function (e) {
+        if (e.keyCode == 13) {
+            $('.send').click();
+        }
+    })
+     })
+</script>
+</body>
+</html>
