@@ -1,0 +1,180 @@
+#header{
+    background-color:whitesmoke;color:white;
+    font-size:30px;
+    margin:0 auto;
+    width: 100%;
+    height:80px;
+    line-height:100px;
+}
+.middle{
+    width: 1200px;
+    margin: 0 auto;
+    clear: both;
+    overflow: hidden;
+}
+.bird{
+    background-color: whitesmoke;color:whitesmoke ;
+    width: 40px;
+    height: 40px;
+    float: left;
+    margin:20px ;
+}
+.zhuf{
+    float: left;
+    font-size: 15px;
+    margin:auto 0;
+    padding: atuo 5px;
+    color: #000;
+}
+#header ul{
+    list-style-type:none;
+    font-size: 15px;
+    float:right;
+}
+.lang li
+{  
+   margin: 25px auto;
+   line-height:10px;
+   padding:5px;
+   float: left;
+}
+a:link,a:visited
+{
+display:block;
+font-weight:bold;
+width:120px;
+margin: auto 10px;
+padding:4px;
+text-decoration:none;
+}
+.banner{
+     width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.mv{
+    height: 400px;
+    width: 100%;
+}
+.carousel-inner{
+  overflow: hidden;  
+}
+.left{
+    margin: auto 0!important;
+}
+.right{
+    margin: auto 0!important;
+}
+.service{
+    width: 1200px;
+    margin: 0 auto;
+    background-color: #ccc;
+}    
+h3{
+    text-align: center;
+}
+.fang li{
+    display:inline-block;
+    list-style: none;
+    height: 300px;
+    width:20%;
+    margin:15px;
+    margin-top: 100px;    
+}
+.fang li p{
+    text-align: center;
+    text-indent: -2em;
+}
+/*introduction*/
+.introduction{
+    text-align: center;
+     width: 1200px;
+   margin: 0 auto;
+}
+.char{
+    width: 100%;
+    text-align: left;
+    margin-bottom: 10px;
+}
+.char img{
+    width: 50%;
+    display: block;
+    float: left;
+    height:450px;
+}
+.char .neirong{
+    width: 49%;
+    height: 450px;
+    display: inline-block;
+    text-align: center;
+}
+.neirong p{
+      text-align: left;
+      padding: 20px;
+      font-size: 20px;
+      text-indent: 2em;
+}
+.neirong p:nth-child(2){
+    border-bottom: 1px solid #ccc;
+}
+.char2 img{
+    float:right;
+}
+
+/*新闻动态*/
+.newact{
+    text-align: center;
+    width: 1200px;
+    margin: 0 auto;
+}
+.newact ul{
+    width: 100%;
+    display: flex;
+    list-style: none;
+}
+.newact ul li{
+    flex: 1;
+    margin-right:10px ;
+}
+.newact ul li img{
+    padding-top: 10px;
+}
+.newact img{
+    width:100%;
+    height: 200px;
+    margin: 0 auto;
+}
+
+/*footer*/
+.footer{
+    background-color: #ccc;
+  }
+.lianxi{
+    padding-top: 40px;
+    width: 80%;
+    display: flex;
+    margin: 0 auto;
+  }
+  .message{
+    flex: 1;
+    text-align: center;
+    padding-top: 20px;
+  }
+  .message img{
+    margin-bottom: 15px;
+  }
+  .my{
+    padding-top: 20px;
+  }
+
+  .erwei img{
+       width: 200px;
+       height: 200px;
+  }
+   .end{
+     width: 50%;
+     margin: 0 auto;
+     text-align: center;
+     border-top: 1px solid rgb(189, 187, 187);
+     padding: 50px;
+   }

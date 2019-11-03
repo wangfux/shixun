@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>news-detail</title>
+    <!--<link rel="stylesheet" href="css/news-detail.css">-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdn.bootcss.com/axios/0.19.0/axios.min.js"></script>
+
+    <style>
+        #header{
+    background-color:whitesmoke;color:white;
+    font-size:30px;
+    margin:0 auto;
+    width: 100%;
+    height:80px;
+    line-height:100px;
+}
+.middle{
+    width: 1200px;
+    margin: 0 auto;
+    clear: both;
+    overflow: hidden;
+}
+.bird{
+    background-color: whitesmoke;color:whitesmoke ;
+    width: 40px;
+    height: 40px;
+    float: left;
+    margin:20px ;
+}
+.zhuf{
+    float: left;
+    font-size: 15px;
+    margin:auto 0;
+    padding: atuo 5px;
+    color: #000;
+}
+#header ul{
+    list-style-type:none;
+    font-size: 15px;
+    float:right;
+}
+.lang li
+{  
+   margin: 25px auto;
+   line-height:10px;
+   padding:5px;
+   float: left;
+}
+a:link,a:visited
+{
+display:block;
+font-weight:bold;
+width:120px;
+margin: auto 10px;
+padding:4px;
+text-decoration:none;
+}
+/*footer*/
+.footer{
+    background-color: #ccc;
+  }
+.lianxi{
+    padding-top: 40px;
+    width: 80%;
+    display: flex;
+    margin: 0 auto;
+  }
+  .message{
+    flex: 1;
+    text-align: center;
+    padding-top: 20px;
+  }
+  .message img{
+    margin-bottom: 15px;
+  }
+  .my{
+    padding-top: 20px;
+  }
+
+  .erwei img{
+       width: 200px;
+       height: 200px;
+  }
+   .end{
+     width: 50%;
+     margin: 0 auto;
+     text-align: center;
+     border-top: 1px solid rgb(189, 187, 187);
+     padding: 50px;
+   }
+   *{
+    margin: 0;
+    padding: 0;
+}
+
+.content {
+  width: 1200px;
+    margin: 0 auto;
+}
+.content h2{
+    text-align: center;
+}
+.imgg{
+    display: block;
+    text-align: center;
+    margin: 30px;
+}
+.content p {
+     text-align: center;
+}
+
+
+    </style>
+</head>
+<body>
+     <!--header-->
+     <div id="header">
+            <div class="middle">
+                <img class="bird" src="images/logo.png" alt="">
+                <span class="zhuf">山村住房</span>
+                    <ul class="lang">
+                            <li><a href="index2.html">首页</a></li>
+                            <li><a href="news.html">新闻</a></li>
+                            <li><a href="about.html">关于我们</a></li>
+                    </ul>
+            </div>        
+        </div>
+        <div class="content">
+            <h2></h2>
+            <div class="imgg"></div>
+            <p></p>
+       </div>
+
+        <!-- footer-->
+        <div class="footer">
+                <div class="lianxi">
+                     <div class="message my">
+                       <img src="images/weizhi.png" alt="">
+                       <p>福州市闽江学院</p>
+                     </div>
+                     <div class="message my">
+                       <img src="images/youxiang.png" alt="">
+                       <p>319396712@qq.com</p>
+                     </div>
+                     <div class="message my">
+                       <img src="images/dianh.png" alt="">
+                       <p>15005931667</p>
+                     </div>
+                     <div class="message erwei">
+                       <img src="images/erweima.png" alt="">
+                       <p>扫一扫，加入山村住房</p>
+                     </div>
+                </div>
+                <p class="end">
+                  版权所有@山村住房
+                </p>
+         </div>
+         <script>
+          $(function(){
+            var id=parseInt(location.search.split('=')[1]);
+            console.log(id);
+                 axios.get('https://lingqule.papamk.com/wp-json/w2w/v1/products/'+id)
+                 .then(function(res){
+                              var a=res.data;
+                              $('.content h2').html(a.name);
+                              $('.content .imgg').html(a.description_html);
+                              $('.content p').html(a.date_created);
+                              
+                              
+                 }).catch(function(res){
+                      console.log('error',res);
+                      
+                 })
+            
+            
+            
+          })
+  </script>
+
+
+</body>
+</html>

@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://cdn.bootcss.com/axios/0.19.0/axios.min.js"></script>
+  
+  <style>
+     *{
+    margin: 0;
+    padding: 0;
+}
+    #header{
+    background-color:whitesmoke;color:white;
+    font-size:30px;
+    margin:0 auto;
+    width: 100%;
+    height:80px;
+    line-height:100px;
+}
+.middle{
+    width: 1200px;
+    margin: 0 auto;
+    clear: both;
+    overflow: hidden;
+}
+.bird{
+    background-color: whitesmoke;color:whitesmoke ;
+    width: 40px;
+    height: 40px;
+    float: left;
+    margin:20px ;
+}
+.zhuf{
+    float: left;
+    font-size: 15px;
+    margin:auto 0;
+    padding: atuo 5px;
+    color: #000;
+}
+#header ul{
+    list-style-type:none;
+    font-size: 15px;
+    float:right;
+}
+.lang li
+{  
+   margin: 25px auto;
+   line-height:10px;
+   padding:5px;
+   float: left;
+}
+a:link,a:visited
+{
+display:block;
+font-weight:bold;
+width:120px;
+margin: auto 10px;
+padding:4px;
+text-decoration:none;
+}
+/*footer*/
+.footer{
+    background-color: #ccc;
+  }
+.lianxi{
+    padding-top: 40px;
+    width: 80%;
+    display: flex;
+    margin: 0 auto;
+  }
+  .message{
+    flex: 1;
+    text-align: center;
+    padding-top: 20px;
+  }
+  .message img{
+    margin-bottom: 15px;
+  }
+  .my{
+    padding-top: 20px;
+  }
+
+  .erwei img{
+       width: 200px;
+       height: 200px;
+  }
+   .end{
+     width: 50%;
+     margin: 0 auto;
+     text-align: center;
+     border-top: 1px solid rgb(189, 187, 187);
+     padding: 50px;
+   }
+.content{
+    /* margin-top: 30px; */
+    width: 1200px;
+    margin: 0 auto;
+}
+.thumbnail span{
+    text-align: right;
+}
+.thumbnail img{
+    height: 400px!important;
+}
+
+</style>          
+</head>
+<body>
+    <!-- header -->
+    <div id="header">
+            <div class="middle">
+                <img class="bird" src="images/logo.png" alt="">
+                <span class="zhuf">山村住房</span>
+                    <ul class="lang">
+                            <li><a href="index2.html">首页</a></li>
+                            <li><a href="news.html">新闻</a></li>
+                            <li><a href="about.html">关于我们</a></li>
+                    </ul>
+            </div>        
+        </div>
+    
+      <!-- content -->
+      <div class="content">
+        <div class="news">
+    
+          <div class="row">
+            <div class="col-sm-6 col-md-4">
+              <div class="thumbnail">
+                <img src="" alt="">
+                <div class="caption">
+                  <h3>Thumbnail label</h3>
+                  <p>...</p>
+                  <span>sss</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+              <div class="thumbnail">
+                <img src="" alt="">
+                <div class="caption">
+                  <h3>Thumbnail label</h3>
+                  <p>...</p>
+                  <span>sss</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+              <div class="thumbnail">
+                <img src="" alt="">
+                <div class="caption">
+                  <h3>Thumbnail label</h3>
+                  <p>...</p>
+                  <span>sss</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+              <div class="thumbnail">
+                <img src="" alt="">
+                <div class="caption">
+                  <h3>Thumbnail label</h3>
+                  <p>...</p>
+                  <span>sss</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+              <div class="thumbnail">
+                <img src="" alt="">
+                <div class="caption">
+                  <h3>Thumbnail label</h3>
+                  <p>...</p>
+                  <span>sss</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+              <div class="thumbnail">
+                <img src="" alt="">
+                <div class="caption">
+                  <h3>Thumbnail label</h3>
+                  <p>...</p>
+                  <span>sss</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+              <div class="thumbnail">
+                <img src="" alt="">
+                <div class="caption">
+                  <h3>Thumbnail label</h3>
+                  <p>...</p>
+                  <span>sss</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+              <div class="thumbnail">
+                <img src="" alt="">
+                <div class="caption">
+                  <h3>Thumbnail label</h3>
+                  <p>...</p>
+                  <span>sss</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+              <div class="thumbnail">
+                <img src="" alt="">
+                <div class="caption">
+                  <h3>Thumbnail label</h3>
+                  <p>...</p>
+                  <span>sss</span>
+                </div>
+              </div>
+            </div>
+    
+    
+          </div>
+        </div>
+      </div>
+      <!-- footer-->
+      <div class="footer">
+            <div class="lianxi">
+                 <div class="message my">
+                   <img src="images/weizhi.png" alt="">
+                   <p>福州市闽江学院</p>
+                 </div>
+                 <div class="message my">
+                   <img src="images/youxiang.png" alt="">
+                   <p>319396712@qq.com</p>
+                 </div>
+                 <div class="message my">
+                   <img src="images/dianh.png" alt="">
+                   <p>15005931667</p>
+                 </div>
+                 <div class="message erwei">
+                   <img src="images/erweima.png" alt="">
+                   <p>扫一扫，加入山村住房</p>
+                 </div>
+            </div>
+            <p class="end">
+              版权所有@山村住房
+            </p>
+     </div>
+
+     <script>
+            axios.get('https://lingqule.papamk.com/wp-json/w2w/v1/products')
+              .then(function (res) {
+                var a = res.data;
+                console.log(a);
+        
+                $.each(a, function (i, ele) {
+        
+                  $('.row .thumbnail').eq(i).find('img').prop('src', ele.images[0].src)
+                  $('.row .thumbnail').eq(i).find('h3').html(ele.name)
+                  $('.row .thumbnail').eq(i).find('p').html(ele.short_description_html)
+                  $('.row .thumbnail').eq(i).find('span').html(ele.date_created)
+                  $('.row .thumbnail').eq(i).click(function () {
+                    window.location.href = "news-detail.html?" + "id=" + ele.id;
+                  })
+        
+                })
+        
+                $('.thumbnail').mouseover(function () {
+                  $(this).css('opacity', 0.7);
+                  $(this).css('border-color', 'skyblue');
+                  $(this).css('cursor', 'pointer');
+        
+                })
+                $('.thumbnail').mouseout(function () {
+                  $(this).css('opacity', "");
+                  $(this).css('border-color', '')
+                })
+        
+        
+              }).catch(function (res) {
+                console.log('error', res);
+        
+              })
+          </script>
+        
+</body>
+</html>
